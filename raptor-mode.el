@@ -1,4 +1,4 @@
-;;; raptor.el --- language support for raptorscript
+;;; raptor-mode.el --- language support for raptorscript
 
 ;; Copyright (C) 2016 Tobias Pisani
 
@@ -35,8 +35,8 @@
      ( ,(regexp-opt raptor-constants 'words) . font-lock-type-face)
      )))
 
-(define-derived-mode raptor-mode fundamental-mode "Raptor"
-  "Raptor mode is a major mode for editing .rapt files"
+(define-derived-mode raptor-mode fundamental-mode "Raptorscript"
+  "Raptor mode is a major mode for editing raptorscript `.rapt' files"
 
   (setq font-lock-defaults raptor-font-lock-defaults)
 
@@ -53,4 +53,4 @@
 
 (provide 'raptor-mode)
 
-;;; raptor.el ends here
+;;; raptor-mode.el ends here
