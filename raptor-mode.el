@@ -35,6 +35,7 @@
      ( ,(regexp-opt raptor-constants 'words) . font-lock-type-face)
      )))
 
+;;;###autoload
 (define-derived-mode raptor-mode fundamental-mode "Raptorscript"
   "Raptor mode is a major mode for editing raptorscript `.rapt' files"
 
