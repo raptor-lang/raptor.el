@@ -50,7 +50,10 @@
   (modify-syntax-entry ?# "< b" raptor-mode-syntax-table)
   (modify-syntax-entry ?\n "> b" raptor-mode-syntax-table))
 
-(add-to-list 'auto-mode-alist '("\\.rapt\\'" . raptor-mode))
+;;;###autoload
+(progn
+  (add-to-list 'auto-mode-alist '("\\.rapt\\'" . raptor-mode))
+  (modify-coding-system-alist 'file "\\.rapt\\'" 'utf-8))
 
 (provide 'raptor-mode)
 
